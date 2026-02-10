@@ -1,0 +1,123 @@
+/* Home Page */
+.home {
+  flex: 1;
+}
+
+.quick-preview {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.preview-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.preview-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.preview-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.preview-card h3 {
+  color: #2d3748;
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.preview-card p {
+  color: #718096;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.preview-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.preview-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* Login Section */
+.login-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.login-section-content {
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+.login-section-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login-section-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-btn.primary {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .quick-preview {
+    padding: 2rem 1rem;
+  }
+
+  .preview-container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-section {
+    padding: 3rem 1rem;
+  }
+
+  .login-section-content h2 {
+    font-size: 1.5rem;
+  }
+}

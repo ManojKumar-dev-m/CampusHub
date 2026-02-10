@@ -1,0 +1,103 @@
+/* Notices Section */
+.notices-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.notice-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.notice-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.notice-card.high {
+  border-left: 4px solid #e53e3e;
+  background: #fff5f5;
+}
+
+.notice-card.medium {
+  border-left: 4px solid #dd6b20;
+  background: #fffaf0;
+}
+
+.notice-card.low {
+  border-left: 4px solid #38a169;
+  background: #f0fff4;
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.priority-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.priority-badge.high {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.priority-badge.medium {
+  background: #feebc8;
+  color: #c05621;
+}
+
+.priority-badge.low {
+  background: #c6f6d5;
+  color: #276749;
+}
+
+.notice-card h3 {
+  color: #2d3748;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.notice-content {
+  color: #4a5568;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.notice-footer {
+  display: flex;
+  gap: 1.5rem;
+  color: #718096;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .notice-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .notice-card {
+    padding: 1rem;
+  }
+}
